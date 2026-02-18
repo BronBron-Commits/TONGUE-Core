@@ -1,7 +1,10 @@
 
+
 #pragma once
 #include <string>
 #include "Entity.h"
+#include "Stats.h"
+#include "Leveling.h"
 
 namespace Core {
 class Character : public Entity {
@@ -12,9 +15,15 @@ public:
     int getHealth() const;
     void levelUp();
 
+    // Accessors for Stats and Leveling
+    Stats& stats();
+    const Stats& stats() const;
+    Leveling& leveling();
+    const Leveling& leveling() const;
+
 private:
     std::string name;
-    int health = 100;
-    int level = 1;
+    Stats m_stats;
+    Leveling m_leveling;
 };
 }

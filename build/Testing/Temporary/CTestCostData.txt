@@ -1,3 +1,16 @@
-CharacterTests.InitialHealth 1 0.0110441
-LevelingTests.LevelUpIncreasesHealth 1 0.0096738
+CharacterTests.InitialHealth 2 0.0050692
+LevelingTests.LevelUpIncreasesHealth 1 0.0096095
+LevelingTests.LevelUpIncreasesMaxHealth 2 0.0046095
+LevelingTests.LevelUpResetsHealth 2 0.0045608
+StatsTests.ResourceInitialization 2 0.0589579
+StatsTests.ResourceConsumption 2 0.0046358
+StatsTests.ResourceRegeneration 2 0.00467315
+StatsTests.InitialHealth 2 0.0589492
+StatsTests.InitialMana 2 0.004693
+StatsTests.ManaConsumption 2 0.0569054
+StatsTests.ManaOverConsumptionFails 2 0.00468145
+StatsTests.ManaRegeneration 2 0.0565789
+AbilityTests.CooldownPreventsReuse 2 0.0046063
+AbilityTests.DamageAppliesCorrectly 2 0.0048897
+AbilityTests.HealingAppliesCorrectly 2 0.0048062
 ---

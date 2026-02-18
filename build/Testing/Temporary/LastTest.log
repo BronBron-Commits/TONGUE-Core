@@ -1,10 +1,10 @@
-Start testing: Feb 18 09:51 Eastern Standard Time
+Start testing: Feb 18 10:04 Eastern Standard Time
 ----------------------------------------------------------
-1/2 Testing: CharacterTests.InitialHealth
-1/2 Test: CharacterTests.InitialHealth
+1/15 Testing: CharacterTests.InitialHealth
+1/15 Test: CharacterTests.InitialHealth
 Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=CharacterTests.InitialHealth" "--gtest_also_run_disabled_tests"
 Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
-"CharacterTests.InitialHealth" start time: Feb 18 09:51 Eastern Standard Time
+"CharacterTests.InitialHealth" start time: Feb 18 10:04 Eastern Standard Time
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = CharacterTests.InitialHealth
@@ -22,15 +22,15 @@ Note: Google Test filter = CharacterTests.InitialHealth
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"CharacterTests.InitialHealth" end time: Feb 18 09:51 Eastern Standard Time
+"CharacterTests.InitialHealth" end time: Feb 18 10:04 Eastern Standard Time
 "CharacterTests.InitialHealth" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: LevelingTests.LevelUpIncreasesHealth
-2/2 Test: LevelingTests.LevelUpIncreasesHealth
+2/15 Testing: LevelingTests.LevelUpIncreasesHealth
+2/15 Test: LevelingTests.LevelUpIncreasesHealth
 Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=LevelingTests.LevelUpIncreasesHealth" "--gtest_also_run_disabled_tests"
 Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
-"LevelingTests.LevelUpIncreasesHealth" start time: Feb 18 09:51 Eastern Standard Time
+"LevelingTests.LevelUpIncreasesHealth" start time: Feb 18 10:04 Eastern Standard Time
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = LevelingTests.LevelUpIncreasesHealth
@@ -48,8 +48,346 @@ Note: Google Test filter = LevelingTests.LevelUpIncreasesHealth
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"LevelingTests.LevelUpIncreasesHealth" end time: Feb 18 09:51 Eastern Standard Time
+"LevelingTests.LevelUpIncreasesHealth" end time: Feb 18 10:04 Eastern Standard Time
 "LevelingTests.LevelUpIncreasesHealth" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Feb 18 09:51 Eastern Standard Time
+3/15 Testing: LevelingTests.LevelUpIncreasesMaxHealth
+3/15 Test: LevelingTests.LevelUpIncreasesMaxHealth
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=LevelingTests.LevelUpIncreasesMaxHealth" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"LevelingTests.LevelUpIncreasesMaxHealth" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = LevelingTests.LevelUpIncreasesMaxHealth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LevelingTests
+[ RUN      ] LevelingTests.LevelUpIncreasesMaxHealth
+[       OK ] LevelingTests.LevelUpIncreasesMaxHealth (0 ms)
+[----------] 1 test from LevelingTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"LevelingTests.LevelUpIncreasesMaxHealth" end time: Feb 18 10:04 Eastern Standard Time
+"LevelingTests.LevelUpIncreasesMaxHealth" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/15 Testing: LevelingTests.LevelUpResetsHealth
+4/15 Test: LevelingTests.LevelUpResetsHealth
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=LevelingTests.LevelUpResetsHealth" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"LevelingTests.LevelUpResetsHealth" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = LevelingTests.LevelUpResetsHealth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LevelingTests
+[ RUN      ] LevelingTests.LevelUpResetsHealth
+[       OK ] LevelingTests.LevelUpResetsHealth (0 ms)
+[----------] 1 test from LevelingTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"LevelingTests.LevelUpResetsHealth" end time: Feb 18 10:04 Eastern Standard Time
+"LevelingTests.LevelUpResetsHealth" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/15 Testing: StatsTests.ResourceInitialization
+5/15 Test: StatsTests.ResourceInitialization
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=StatsTests.ResourceInitialization" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"StatsTests.ResourceInitialization" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatsTests.ResourceInitialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTests
+[ RUN      ] StatsTests.ResourceInitialization
+[       OK ] StatsTests.ResourceInitialization (0 ms)
+[----------] 1 test from StatsTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTests.ResourceInitialization" end time: Feb 18 10:04 Eastern Standard Time
+"StatsTests.ResourceInitialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/15 Testing: StatsTests.ResourceConsumption
+6/15 Test: StatsTests.ResourceConsumption
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=StatsTests.ResourceConsumption" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"StatsTests.ResourceConsumption" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatsTests.ResourceConsumption
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTests
+[ RUN      ] StatsTests.ResourceConsumption
+[       OK ] StatsTests.ResourceConsumption (0 ms)
+[----------] 1 test from StatsTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTests.ResourceConsumption" end time: Feb 18 10:04 Eastern Standard Time
+"StatsTests.ResourceConsumption" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/15 Testing: StatsTests.ResourceRegeneration
+7/15 Test: StatsTests.ResourceRegeneration
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=StatsTests.ResourceRegeneration" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"StatsTests.ResourceRegeneration" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatsTests.ResourceRegeneration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTests
+[ RUN      ] StatsTests.ResourceRegeneration
+[       OK ] StatsTests.ResourceRegeneration (0 ms)
+[----------] 1 test from StatsTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTests.ResourceRegeneration" end time: Feb 18 10:04 Eastern Standard Time
+"StatsTests.ResourceRegeneration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/15 Testing: StatsTests.InitialHealth
+8/15 Test: StatsTests.InitialHealth
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=StatsTests.InitialHealth" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"StatsTests.InitialHealth" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatsTests.InitialHealth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTests
+[ RUN      ] StatsTests.InitialHealth
+[       OK ] StatsTests.InitialHealth (0 ms)
+[----------] 1 test from StatsTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTests.InitialHealth" end time: Feb 18 10:04 Eastern Standard Time
+"StatsTests.InitialHealth" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/15 Testing: StatsTests.InitialMana
+9/15 Test: StatsTests.InitialMana
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=StatsTests.InitialMana" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"StatsTests.InitialMana" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatsTests.InitialMana
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTests
+[ RUN      ] StatsTests.InitialMana
+[       OK ] StatsTests.InitialMana (0 ms)
+[----------] 1 test from StatsTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTests.InitialMana" end time: Feb 18 10:04 Eastern Standard Time
+"StatsTests.InitialMana" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/15 Testing: StatsTests.ManaConsumption
+10/15 Test: StatsTests.ManaConsumption
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=StatsTests.ManaConsumption" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"StatsTests.ManaConsumption" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatsTests.ManaConsumption
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTests
+[ RUN      ] StatsTests.ManaConsumption
+[       OK ] StatsTests.ManaConsumption (0 ms)
+[----------] 1 test from StatsTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTests.ManaConsumption" end time: Feb 18 10:04 Eastern Standard Time
+"StatsTests.ManaConsumption" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/15 Testing: StatsTests.ManaOverConsumptionFails
+11/15 Test: StatsTests.ManaOverConsumptionFails
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=StatsTests.ManaOverConsumptionFails" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"StatsTests.ManaOverConsumptionFails" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatsTests.ManaOverConsumptionFails
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTests
+[ RUN      ] StatsTests.ManaOverConsumptionFails
+[       OK ] StatsTests.ManaOverConsumptionFails (0 ms)
+[----------] 1 test from StatsTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTests.ManaOverConsumptionFails" end time: Feb 18 10:04 Eastern Standard Time
+"StatsTests.ManaOverConsumptionFails" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/15 Testing: StatsTests.ManaRegeneration
+12/15 Test: StatsTests.ManaRegeneration
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=StatsTests.ManaRegeneration" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"StatsTests.ManaRegeneration" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatsTests.ManaRegeneration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatsTests
+[ RUN      ] StatsTests.ManaRegeneration
+[       OK ] StatsTests.ManaRegeneration (0 ms)
+[----------] 1 test from StatsTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"StatsTests.ManaRegeneration" end time: Feb 18 10:04 Eastern Standard Time
+"StatsTests.ManaRegeneration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/15 Testing: AbilityTests.CooldownPreventsReuse
+13/15 Test: AbilityTests.CooldownPreventsReuse
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=AbilityTests.CooldownPreventsReuse" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"AbilityTests.CooldownPreventsReuse" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = AbilityTests.CooldownPreventsReuse
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AbilityTests
+[ RUN      ] AbilityTests.CooldownPreventsReuse
+[       OK ] AbilityTests.CooldownPreventsReuse (0 ms)
+[----------] 1 test from AbilityTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"AbilityTests.CooldownPreventsReuse" end time: Feb 18 10:04 Eastern Standard Time
+"AbilityTests.CooldownPreventsReuse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/15 Testing: AbilityTests.DamageAppliesCorrectly
+14/15 Test: AbilityTests.DamageAppliesCorrectly
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=AbilityTests.DamageAppliesCorrectly" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"AbilityTests.DamageAppliesCorrectly" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = AbilityTests.DamageAppliesCorrectly
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AbilityTests
+[ RUN      ] AbilityTests.DamageAppliesCorrectly
+[       OK ] AbilityTests.DamageAppliesCorrectly (0 ms)
+[----------] 1 test from AbilityTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"AbilityTests.DamageAppliesCorrectly" end time: Feb 18 10:04 Eastern Standard Time
+"AbilityTests.DamageAppliesCorrectly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/15 Testing: AbilityTests.HealingAppliesCorrectly
+15/15 Test: AbilityTests.HealingAppliesCorrectly
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=AbilityTests.HealingAppliesCorrectly" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"AbilityTests.HealingAppliesCorrectly" start time: Feb 18 10:04 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = AbilityTests.HealingAppliesCorrectly
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AbilityTests
+[ RUN      ] AbilityTests.HealingAppliesCorrectly
+[       OK ] AbilityTests.HealingAppliesCorrectly (0 ms)
+[----------] 1 test from AbilityTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"AbilityTests.HealingAppliesCorrectly" end time: Feb 18 10:04 Eastern Standard Time
+"AbilityTests.HealingAppliesCorrectly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 18 10:04 Eastern Standard Time

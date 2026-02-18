@@ -4,3 +4,4 @@ C:/Projects/TONGUE/TONGUE-Core/build/CMakeFiles/ALL_BUILD.dir
 C:/Projects/TONGUE/TONGUE-Core/build/CMakeFiles/ZERO_CHECK.dir
 C:/Projects/TONGUE/TONGUE-Core/build/tests/CMakeFiles/CoreTests.dir
 C:/Projects/TONGUE/TONGUE-Core/build/tests/CMakeFiles/RUN_TESTS.dir
+C:/Projects/TONGUE/TONGUE-Core/build/tests/CMakeFiles/ALL_BUILD.dir

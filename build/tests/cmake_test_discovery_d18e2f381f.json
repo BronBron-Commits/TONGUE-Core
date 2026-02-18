@@ -1,5 +1,5 @@
 {
-  "tests": 2,
+  "tests": 15,
   "name": "AllTests",
   "testsuites": [
     {
@@ -15,12 +15,89 @@
     },
     {
       "name": "LevelingTests",
-      "tests": 1,
+      "tests": 3,
       "testsuite": [
         {
           "name": "LevelUpIncreasesHealth",
           "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
           "line": 15
+        },
+        {
+          "name": "LevelUpIncreasesMaxHealth",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\StatsTests.cpp",
+          "line": 55
+        },
+        {
+          "name": "LevelUpResetsHealth",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\StatsTests.cpp",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "name": "StatsTests",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "ResourceInitialization",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
+          "line": 26
+        },
+        {
+          "name": "ResourceConsumption",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
+          "line": 30
+        },
+        {
+          "name": "ResourceRegeneration",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
+          "line": 34
+        },
+        {
+          "name": "InitialHealth",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\StatsTests.cpp",
+          "line": 11
+        },
+        {
+          "name": "InitialMana",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\StatsTests.cpp",
+          "line": 17
+        },
+        {
+          "name": "ManaConsumption",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\StatsTests.cpp",
+          "line": 26
+        },
+        {
+          "name": "ManaOverConsumptionFails",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\StatsTests.cpp",
+          "line": 35
+        },
+        {
+          "name": "ManaRegeneration",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\StatsTests.cpp",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "name": "AbilityTests",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "CooldownPreventsReuse",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
+          "line": 41
+        },
+        {
+          "name": "DamageAppliesCorrectly",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
+          "line": 45
+        },
+        {
+          "name": "HealingAppliesCorrectly",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
+          "line": 49
         }
       ]
     }

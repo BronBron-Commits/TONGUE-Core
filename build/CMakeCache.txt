@@ -209,6 +209,15 @@ TONGUE-Core_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 TONGUE-Core_SOURCE_DIR:STATIC=C:/Projects/TONGUE/TONGUE-Core
 
+//Value Computed by CMake
+TONGUE_Core_Tests_BINARY_DIR:STATIC=C:/Projects/TONGUE/TONGUE-Core/build/tests
+
+//Value Computed by CMake
+TONGUE_Core_Tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+TONGUE_Core_Tests_SOURCE_DIR:STATIC=C:/Projects/TONGUE/TONGUE-Core/tests
+
 //Automatically copy dependencies into the output directory for
 // executables.
 VCPKG_APPLOCAL_DEPS:BOOL=ON

@@ -13,6 +13,10 @@ void Leveling::AddXP(int amount) {
     }
 }
 
+void Leveling::levelUp() {
+    level++;
+}
+
 int Leveling::GetLevel() const {
     return level;
 }
