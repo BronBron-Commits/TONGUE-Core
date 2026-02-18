@@ -1,5 +1,0 @@
-if(EXISTS "C:/Projects/TONGUE/TONGUE-Core/build/tests/CoreTests[1]_tests.cmake")
-  include("C:/Projects/TONGUE/TONGUE-Core/build/tests/CoreTests[1]_tests.cmake")
-else()
-  add_test(CoreTests_NOT_BUILT CoreTests_NOT_BUILT)
-endif()
