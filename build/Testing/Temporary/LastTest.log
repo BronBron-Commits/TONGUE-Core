@@ -1,0 +1,55 @@
+Start testing: Feb 18 09:51 Eastern Standard Time
+----------------------------------------------------------
+1/2 Testing: CharacterTests.InitialHealth
+1/2 Test: CharacterTests.InitialHealth
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=CharacterTests.InitialHealth" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"CharacterTests.InitialHealth" start time: Feb 18 09:51 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = CharacterTests.InitialHealth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CharacterTests
+[ RUN      ] CharacterTests.InitialHealth
+[       OK ] CharacterTests.InitialHealth (0 ms)
+[----------] 1 test from CharacterTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"CharacterTests.InitialHealth" end time: Feb 18 09:51 Eastern Standard Time
+"CharacterTests.InitialHealth" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: LevelingTests.LevelUpIncreasesHealth
+2/2 Test: LevelingTests.LevelUpIncreasesHealth
+Command: "C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe" "--gtest_filter=LevelingTests.LevelUpIncreasesHealth" "--gtest_also_run_disabled_tests"
+Directory: C:/Projects/TONGUE/TONGUE-Core/build/tests
+"LevelingTests.LevelUpIncreasesHealth" start time: Feb 18 09:51 Eastern Standard Time
+Output:
+----------------------------------------------------------
+Note: Google Test filter = LevelingTests.LevelUpIncreasesHealth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LevelingTests
+[ RUN      ] LevelingTests.LevelUpIncreasesHealth
+[       OK ] LevelingTests.LevelUpIncreasesHealth (0 ms)
+[----------] 1 test from LevelingTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"LevelingTests.LevelUpIncreasesHealth" end time: Feb 18 09:51 Eastern Standard Time
+"LevelingTests.LevelUpIncreasesHealth" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 18 09:51 Eastern Standard Time

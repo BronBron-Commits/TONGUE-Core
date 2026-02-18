@@ -1,0 +1,10 @@
+^C:\PROJECTS\TONGUE\TONGUE-CORE\BUILD\CMAKEFILES\F8FF34819F91612B939DA534C487D73B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/TONGUE/TONGUE-Core -BC:/Projects/TONGUE/TONGUE-Core/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Projects/TONGUE/TONGUE-Core/build/TONGUE-Core.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

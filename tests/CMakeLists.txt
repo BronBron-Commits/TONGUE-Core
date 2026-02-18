@@ -1,7 +1,14 @@
-file(GLOB TEST_SOURCES *.cpp)
 
-add_executable(CoreTests ${TEST_SOURCES})
+# Enable testing
+enable_testing()
 
-target_link_libraries(CoreTests TONGUE-Core gtest gtest_main)
+# Add test executable
+add_executable(CoreTests CoreTests.cpp)
 
-add_test(NAME CoreTests COMMAND CoreTests)
+# Link GoogleTest and Core library
+find_package(GTest CONFIG REQUIRED)
+target_link_libraries(CoreTests PRIVATE GTest::gtest GTest::gtest_main TONGUE-Core)
+
+# Register tests
+include(GoogleTest)
+gtest_discover_tests(CoreTests)

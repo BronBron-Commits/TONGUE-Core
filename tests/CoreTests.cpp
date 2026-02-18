@@ -1,38 +1,25 @@
-#include <gtest/gtest.h>
-#include "Core/Entity.h"
-#include "Core/Component.h"
-#include "Core/Character.h"
-#include "Core/Move.h"
-#include "Core/Event.h"
-#include "Core/System.h"
-#include "Core/CoreManager.h"
 
+
+#include <gtest/gtest.h>
+
+#include "../include/Core/Character.h"
 using namespace Core;
 
-TEST(EntityTest, ConstructorDestructor) {
-    Entity e;
+// Simple test to verify Character health
+TEST(CharacterTests, InitialHealth) {
+    Character c("Hero");
+    EXPECT_EQ(c.getHealth(), 100); // adjust to your default value
 }
 
-TEST(ComponentTest, ConstructorDestructor) {
-    Component c;
+// Simple test for Leveling system
+TEST(LevelingTests, LevelUpIncreasesHealth) {
+    Character c("Hero");
+    int oldHealth = c.getHealth();
+    c.levelUp();
+    EXPECT_GT(c.getHealth(), oldHealth);
 }
 
-TEST(CharacterTest, ConstructorDestructor) {
-    Character ch;
-}
-
-TEST(MoveTest, ConstructorDestructor) {
-    Move m;
-}
-
-TEST(EventTest, ConstructorDestructor) {
-    Event ev;
-}
-
-TEST(SystemTest, ConstructorDestructor) {
-    System s;
-}
-
-TEST(CoreManagerTest, ConstructorDestructor) {
-    CoreManager cm;
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

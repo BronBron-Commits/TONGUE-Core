@@ -19,12 +19,25 @@ cmake ..
 make
 ```
 
+
 ## Testing
 
 Unit tests are provided using Google Test. After building, run:
 
 ```sh
-ctest
+ctest --verbose
+```
+
+Example output for a successful test run:
+
+```
+Test project C:/Projects/TONGUE/TONGUE-Core/build
+	Start 1: CharacterTests.InitialHealth
+1/2 Test #1: CharacterTests.InitialHealth ...........   Passed    0.01 sec
+	Start 2: LevelingTests.LevelUpIncreasesHealth
+2/2 Test #2: LevelingTests.LevelUpIncreasesHealth ...   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 2
 ```
 
 ## Main Classes & Features

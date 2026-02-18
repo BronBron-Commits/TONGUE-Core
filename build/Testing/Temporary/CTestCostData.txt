@@ -1,0 +1,3 @@
+CharacterTests.InitialHealth 1 0.0110441
+LevelingTests.LevelUpIncreasesHealth 1 0.0096738
+---

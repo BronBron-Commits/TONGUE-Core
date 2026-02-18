@@ -1,0 +1,10 @@
+^C:\PROJECTS\TONGUE\TONGUE-CORE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/TONGUE/TONGUE-Core -BC:/Projects/TONGUE/TONGUE-Core/build --check-stamp-file C:/Projects/TONGUE/TONGUE-Core/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

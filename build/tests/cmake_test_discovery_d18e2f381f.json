@@ -1,0 +1,28 @@
+{
+  "tests": 2,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "CharacterTests",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "InitialHealth",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "name": "LevelingTests",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "LevelUpIncreasesHealth",
+          "file": "C:\\Projects\\TONGUE\\TONGUE-Core\\tests\\CoreTests.cpp",
+          "line": 15
+        }
+      ]
+    }
+  ]
+}

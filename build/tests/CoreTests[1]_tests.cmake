@@ -1,0 +1,5 @@
+add_test([=[CharacterTests.InitialHealth]=]  C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe [==[--gtest_filter=CharacterTests.InitialHealth]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CharacterTests.InitialHealth]=]  PROPERTIES DEF_SOURCE_LINE [==[C:\Projects\TONGUE\TONGUE-Core\tests\CoreTests.cpp:9]==] WORKING_DIRECTORY C:/Projects/TONGUE/TONGUE-Core/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[LevelingTests.LevelUpIncreasesHealth]=]  C:/Projects/TONGUE/TONGUE-Core/build/tests/Debug/CoreTests.exe [==[--gtest_filter=LevelingTests.LevelUpIncreasesHealth]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[LevelingTests.LevelUpIncreasesHealth]=]  PROPERTIES DEF_SOURCE_LINE [==[C:\Projects\TONGUE\TONGUE-Core\tests\CoreTests.cpp:15]==] WORKING_DIRECTORY C:/Projects/TONGUE/TONGUE-Core/build/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  CoreTests_TESTS CharacterTests.InitialHealth LevelingTests.LevelUpIncreasesHealth)
