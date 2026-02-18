@@ -9,6 +9,11 @@ namespace Core {
 // Base event type
 struct Event {
     std::string type;
+    int entityId = -1;
+    std::string abilityName;
+    std::string statusEffect;
+    float value = 0.0f;
+    // Add more fields as needed for event payloads
 };
 
 using EventCallback = std::function<void(const Event&)>;

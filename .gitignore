@@ -1,17 +1,24 @@
 # Build artifacts
 /build/
+/Debug/
+/Release/
+/x64/
+/CMakeFiles/
+/CMakeCache.txt
+/*.vcxproj.user
+/*.suo
+*.ilk
+*.pdb
+*.exp
 *.obj
 *.lib
-*.pdb
-*.exe
-*.tlog
-/Testing/Temporary/
-# VSCode
-.vscode/
-# CMake
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-# Test logs
-Testing/
+*.dll
+*.idb
+*.ipch
+*.iobj
+*.ipdb
+*.cache
+*.log
+
+# CTest temporary
+Testing/Temporary/

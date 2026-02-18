@@ -2,14 +2,21 @@
 # Minimum CMake version
 cmake_minimum_required(VERSION 3.20)
 
+# Enable testing
+enable_testing()
+
+# Project for tests
+project(TONGUE_Core_Tests)
+
+# Minimum CMake version
+cmake_minimum_required(VERSION 3.20)
+
 # Project for tests
 project(TONGUE_Core_Tests)
 
 # Enable testing
 enable_testing()
 
-# Find Google Test via vcpkg
-find_package(GTest CONFIG REQUIRED)
 
 # Include Core headers
 include_directories(${CMAKE_SOURCE_DIR}/../include)
@@ -22,16 +29,19 @@ set(TEST_SOURCES
 
 # Main core test executable
 add_executable(CoreTests ${TEST_SOURCES})
-target_link_libraries(CoreTests PRIVATE TONGUE-Core GTest::gtest_main)
-include(GoogleTest)
-gtest_discover_tests(CoreTests)
+target_link_libraries(CoreTests PUBLIC gtest_main TONGUE-Core)
+add_test(NAME CoreTests COMMAND CoreTests)
 
 # Advanced scenario tests
 add_executable(AdvancedScenarioTests AdvancedScenarioTests.cpp)
-target_link_libraries(AdvancedScenarioTests PRIVATE TONGUE-Core GTest::gtest_main)
+target_link_libraries(AdvancedScenarioTests PUBLIC gtest_main TONGUE-Core)
 add_test(NAME AdvancedScenarioTests COMMAND AdvancedScenarioTests)
 
 # Scenario tests
 add_executable(ScenarioTests ScenarioTests.cpp)
-target_link_libraries(ScenarioTests PRIVATE TONGUE-Core GTest::gtest_main)
+target_link_libraries(ScenarioTests PUBLIC gtest_main TONGUE-Core)
 add_test(NAME ScenarioTests COMMAND ScenarioTests)
+# Buff system tests
+add_executable(BuffSystemTests BuffSystemTests.cpp)
+target_link_libraries(BuffSystemTests PUBLIC gtest_main TONGUE-Core)
+add_test(NAME BuffSystemTests COMMAND BuffSystemTests)
