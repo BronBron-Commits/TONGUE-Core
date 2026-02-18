@@ -1,0 +1,17 @@
+# Build artifacts
+/build/
+*.obj
+*.lib
+*.pdb
+*.exe
+*.tlog
+/Testing/Temporary/
+# VSCode
+.vscode/
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+# Test logs
+Testing/
