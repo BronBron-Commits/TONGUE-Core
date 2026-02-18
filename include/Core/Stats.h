@@ -19,18 +19,22 @@ class Stats {
 public:
     Stats();
 
-    // Health logic
+    // --- Health management ---
+    // Get current health
     float getHealth() const { return health; }
+    // Get maximum health
     float getMaxHealth() const { return maxHealth; }
+    // Set current health (clamped to max)
     void setHealth(float h) { health = std::min(h, maxHealth); }
+    // Increase maximum health
     void increaseMaxHealth(float amount) { maxHealth += amount; }
 
-    // Mana logic (stub for now)
+    // --- Mana management ---
     float getMana() const { return mana; }
     float getMaxMana() const { return maxMana; }
     void setMana(float m) { mana = std::min(m, maxMana); }
 
-    // ...existing stat methods...
+    // --- Generic stat interface ---
     void SetStat(StatType type, float value);
     float GetStat(StatType type) const;
     void ModifyStat(StatType type, float delta);
