@@ -1,0 +1,89 @@
+TONGUE-Core Development Instructions
+Purpose
+
+TONGUE-Core is the foundation of the TONGUE Engine. Its job is to provide core utilities, math, entity/component systems, resource management, and system abstractions. Everything here must remain independent of Renderer, Audio, Input, or UI modules.
+
+Engineer Guidance
+1. Scope
+
+Only implement functionality that supports all other modules.
+
+Do not reference graphics, audio, input, or UI.
+
+Keep modules small and focused. Each class or utility should do one thing.
+
+2. Code Practices
+
+Use C++17 features where appropriate.
+
+Prefer std::unique_ptr and std::shared_ptr over raw pointers.
+
+Avoid global state; favor dependency injection.
+
+Keep functions ≤ 40 lines; break complex logic into helpers.
+
+Use constexpr, inline, and templates to maximize compile-time safety.
+
+3. Naming Conventions
+
+Classes/structs: CamelCase
+
+Functions/variables: snake_case
+
+Constants: ALL_CAPS
+
+File names: match main class or module name.
+
+4. Error Handling
+
+Prefer return-based error handling (Result or optional) over exceptions for recoverable errors.
+
+Log critical errors clearly.
+
+Validate inputs on all public interfaces.
+
+5. Documentation
+
+Each class, struct, and public function must have a comment explaining purpose and usage.
+
+Include example usage for complex utilities.
+
+6. Core Modules
+
+Math Utilities
+
+Vectors, matrices, quaternions, transforms, constants.
+
+No references to rendering or physics engines yet.
+
+Entity & Component System
+
+Lightweight IDs, component storage, queryable systems.
+
+Fast lookups, modular design, no rendering dependencies.
+
+Resource Management
+
+Memory pools, object lifetimes, generic asset handling.
+
+Thread-safe where necessary.
+
+System Utilities
+
+Logging, config, time, file I/O abstractions.
+
+Must be usable by other modules without modification.
+
+Networking (Optional)
+
+Serialization/deserialization only.
+
+No high-level network logic.
+
+7. Testing
+
+Write unit tests for every class or utility.
+
+Place tests in a Tests/ folder.
+
+Validate edge cases and performance-critical sections.

@@ -1,0 +1,35 @@
+Minimum Goals for TONGUE-Core
+
+Entity & Component System
+
+Entities must support multiple character types.
+
+Components should include move/ability definitions, stats, health, state flags.
+
+Core should allow dynamic attachment of abilities or movesets at runtime (e.g., different characters load different movesets).
+
+Event & Messaging System
+
+Events must handle character-specific actions (e.g., “AttackStarted(characterID)”, “MoveExecuted(characterID)”).
+
+Must support broadcasting to multiple systems (UI, Animation, Audio, Physics).
+
+State & Tick Management
+
+Core should maintain per-entity state updates each tick.
+
+Time/delta management should support fast, predictable updates for multiple entities simultaneously.
+
+Resource & Configuration Management
+
+Core may need ability to reference move/ability data (could be JSON, scriptable objects, or data tables).
+
+Must support dynamic character instantiation with different sets of components.
+
+Interfaces for Other Systems
+
+Must provide hooks for Renderer to know which entity needs to be drawn and in which state.
+
+Must provide hooks for Audio (for abilities, character actions).
+
+Must provide hooks for Input to bind player or AI controls per character.
