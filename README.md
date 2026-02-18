@@ -27,7 +27,7 @@ Unit tests are provided using Google Test. After building, run:
 ctest
 ```
 
-## Main Classes
+## Main Classes & Features
 
 - `Entity` - Base class for all entities
 - `Component` - Base class for all components
@@ -36,6 +36,15 @@ ctest
 - `Event` - Event system base
 - `System` - Base for systems
 - `CoreManager` - Manages core logic
+- `Stats` - Handles health, mana, attack, defense, and other stats
+- `Leveling` - XP, level, and stat scaling
+- `Ability` - Move/ability logic, cooldowns, targeting
+- `Effect` - Buffs, debuffs, status effects
+- `CooldownManager` - Manages ability cooldowns
+
+### Example ECS Components & Systems
+- StatsComponent, ResourceComponent, PositionComponent, AbilityComponent, BuffComponent
+- LevelingSystem, CombatSystem, ResourceSystem, CooldownSystem, BuffSystem
 
 ---
 
