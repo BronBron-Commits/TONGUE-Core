@@ -47,11 +47,10 @@ TEST(ScenarioTests, AbilityCooldownPreventsImmediateReuse) {
     CoreManager manager;
     manager.registerEntity(rogueId, &rogueStats);
     auto quickStrike = std::make_shared<Ability>("QuickStrike", 10, 5, 2);
-    manager.cooldownSystem().setCooldown(rogueId, quickStrike->getName(), quickStrike->getCooldown());
-    // First cast (should be on cooldown now)
+    // First cast: should NOT be on cooldown
     bool firstCast = !manager.cooldownSystem().isOnCooldown(rogueId, quickStrike->getName());
     manager.cooldownSystem().setCooldown(rogueId, quickStrike->getName(), quickStrike->getCooldown());
-    // Second cast (should be prevented)
+    // Second cast: should be on cooldown
     bool secondCast = !manager.cooldownSystem().isOnCooldown(rogueId, quickStrike->getName());
     EXPECT_TRUE(firstCast);
     EXPECT_FALSE(secondCast);

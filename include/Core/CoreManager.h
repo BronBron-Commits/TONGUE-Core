@@ -4,6 +4,7 @@
 #include "ResourceSystem.h"
 #include "CooldownSystem.h"
 #include "BuffSystem.h"
+#include "AI.h"
 
 namespace Core {
 class CoreManager {
@@ -19,11 +20,13 @@ public:
     ResourceSystem& resourceSystem();
     CooldownSystem& cooldownSystem();
     BuffSystem& buffSystem();
+    AIController& aiController();
 private:
     EventSystem m_events;
     CombatSystem m_combat;
     ResourceSystem m_resource;
     CooldownSystem m_cooldown;
     BuffSystem m_buff;
+    AIController m_ai;
 };
 }

@@ -1,4 +1,5 @@
 #include "Core/CoreManager.h"
+#include "Core/AI.h"
 
 namespace Core {
 
@@ -15,10 +16,11 @@ void CoreManager::registerEntity(int entityId, Stats* stats) {
 void CoreManager::update(float deltaTime) {
 	// Example update order:
 	m_resource.update(deltaTime);   // 1. Resource regeneration
-	m_buff.update(deltaTime);       // 2. Buffs
-	m_combat.update(deltaTime);     // 3. Combat
-	m_cooldown.update(deltaTime);   // 4. Cooldowns
-	// 5. Event dispatching is handled by systems as needed
+	m_cooldown.update(deltaTime);   // 2. Cooldowns
+	m_buff.update(deltaTime);       // 3. Buffs
+	m_ai.update(deltaTime);         // 4. AI/Decision
+	m_combat.update(deltaTime);     // 5. Combat
+	// 6. Event dispatching is handled by systems as needed
 }
 
 EventSystem& CoreManager::eventSystem() { return m_events; }
@@ -26,5 +28,6 @@ CombatSystem& CoreManager::combatSystem() { return m_combat; }
 ResourceSystem& CoreManager::resourceSystem() { return m_resource; }
 CooldownSystem& CoreManager::cooldownSystem() { return m_cooldown; }
 BuffSystem& CoreManager::buffSystem() { return m_buff; }
+AIController& CoreManager::aiController() { return m_ai; }
 
 } // namespace Core

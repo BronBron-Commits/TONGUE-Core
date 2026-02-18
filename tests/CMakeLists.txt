@@ -18,18 +18,20 @@ include_directories(${CMAKE_SOURCE_DIR}/../include)
 set(TEST_SOURCES
 	CoreTests.cpp
 	StatsTests.cpp
-	# Add other test files here as you create them
 )
 
-# Create the test executable
+# Main core test executable
 add_executable(CoreTests ${TEST_SOURCES})
-
-# Link Core library and GTest
-target_link_libraries(CoreTests PRIVATE
-	TONGUE-Core           # Your main core library
-	GTest::gtest_main
-)
-
-# Register tests with CTest
+target_link_libraries(CoreTests PRIVATE TONGUE-Core GTest::gtest_main)
 include(GoogleTest)
 gtest_discover_tests(CoreTests)
+
+# Advanced scenario tests
+add_executable(AdvancedScenarioTests AdvancedScenarioTests.cpp)
+target_link_libraries(AdvancedScenarioTests PRIVATE TONGUE-Core GTest::gtest_main)
+add_test(NAME AdvancedScenarioTests COMMAND AdvancedScenarioTests)
+
+# Scenario tests
+add_executable(ScenarioTests ScenarioTests.cpp)
+target_link_libraries(ScenarioTests PRIVATE TONGUE-Core GTest::gtest_main)
+add_test(NAME ScenarioTests COMMAND ScenarioTests)
