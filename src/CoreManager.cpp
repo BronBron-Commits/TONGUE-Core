@@ -2,14 +2,23 @@
 
 namespace Core {
 
+
 CoreManager::CoreManager()
 	: m_combat(m_events) {}
 
+void CoreManager::registerEntity(int entityId, Stats* stats) {
+	m_combat.registerEntity(entityId, stats);
+	m_resource.registerEntity(entityId, stats);
+	// BuffSystem and CooldownSystem can be extended similarly
+}
+
 void CoreManager::update(float deltaTime) {
-	// Example update order: Buffs, Cooldowns, Resources
-	m_buff.update(deltaTime);
-	m_cooldown.update(deltaTime);
-	// Resource regen could be called per entity elsewhere
+	// Example update order:
+	m_resource.update(deltaTime);   // 1. Resource regeneration
+	m_buff.update(deltaTime);       // 2. Buffs
+	m_combat.update(deltaTime);     // 3. Combat
+	m_cooldown.update(deltaTime);   // 4. Cooldowns
+	// 5. Event dispatching is handled by systems as needed
 }
 
 EventSystem& CoreManager::eventSystem() { return m_events; }

@@ -10,6 +10,10 @@ class CoreManager {
 public:
     CoreManager();
     void update(float deltaTime);
+
+    // Register an entity with all systems
+    void registerEntity(int entityId, Stats* stats);
+
     EventSystem& eventSystem();
     CombatSystem& combatSystem();
     ResourceSystem& resourceSystem();

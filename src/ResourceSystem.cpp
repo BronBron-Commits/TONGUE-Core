@@ -2,14 +2,22 @@
 
 namespace Core {
 
-void ResourceSystem::regenerate(Stats& stats, float deltaTime) {
-    float regenRate = 5.0f; // Example: 5 mana/sec
-    stats.setMana(stats.getMana() + regenRate * deltaTime);
+
+void ResourceSystem::registerEntity(int entityId, Stats* stats) {
+    entityStats[entityId] = stats;
 }
 
-bool ResourceSystem::consume(Stats& stats, float manaCost) {
-    if (stats.getMana() >= manaCost) {
-        stats.setMana(stats.getMana() - manaCost);
+void ResourceSystem::update(float deltaTime) {
+    float regenRate = 5.0f; // Example: 5 mana/sec
+    for (auto& pair : entityStats) {
+        pair.second->setMana(pair.second->getMana() + regenRate * deltaTime);
+    }
+}
+
+bool ResourceSystem::consume(int entityId, float manaCost) {
+    auto it = entityStats.find(entityId);
+    if (it != entityStats.end() && it->second->getMana() >= manaCost) {
+        it->second->setMana(it->second->getMana() - manaCost);
         return true;
     }
     return false;
